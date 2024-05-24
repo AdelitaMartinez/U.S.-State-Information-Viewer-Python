@@ -215,3 +215,13 @@ joined =[
 '30',
 '44'
 ]
+
+user_input = input("Enter the name of a state: ")
+
+# Find the state in the list
+if user_input in states: 
+  index = states.index(user_input)
+  capital = capitals[index]
+  district_count = districts[index]
+  order = joined[index]
+
