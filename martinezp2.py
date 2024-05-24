@@ -216,12 +216,22 @@ joined =[
 '44'
 ]
 
-user_input = input("Enter the name of a state: ")
+# Introduction
+print("Welcome!")
+print("This program provides information about any U.S state you enter.\n")
+
+user_input = input("Enter the name of a state:")
 
 # Find the state in the list
-if user_input in states: 
-  index = states.index(user_input)
-  capital = capitals[index]
-  district_count = districts[index]
-  order = joined[index]
+if user_input in state:
+    index = state.index(user_input)
+    capital = capital[index]
+    district_count = districts[index]
+    order = joined[index]
 
+    print(f"State: {user_input}")
+    print(f"Capital: {capital}")
+    print(f"Number of Congressional Districts: {district_count}")
+    print(f"Order Joined the Union: {order}th \n")
+else:
+    print("State not found. Please check the spelling and Capitalization and try again.")
